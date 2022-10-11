@@ -194,7 +194,7 @@ let lima = {
       this.list.appendChild(li);
     }
     let totalLi = document.createElement('li');
-    totalLi.textContent = `Daily Total: ${this.dailyTotal} cookies`;re
+    totalLi.textContent = `Daily Total: ${this.dailyTotal} cookies`;
     this.list.appendChild(totalLi);
   }
 };
