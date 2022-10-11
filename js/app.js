@@ -33,7 +33,11 @@ for (let i=0; i < hoursDaily.length; i++) {
   seattleList.appendChild(li);
 }
 console.log(seattle);
+seattle.dailyTotal = seattle.dailyTotal + cookiesCurrentHour
 
+let totalLi = document.createElement('li');
+totalLi.textContent = `Total: ${seattle.dailyTotal}`;
+seattleList.appendChild(totalLi);
 // Toyko
 
 let tokyoList = document.getElementById('tokyoList');
