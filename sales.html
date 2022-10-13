@@ -13,6 +13,20 @@
     </header>
     <main>
       <h2>Cookie Sales by Location per Hour:</h2>
+      <form id="addStoreData">
+        <fieldset>
+          <legend>Enter New Store Data:</legend>
+          <label>Location Name:</label>
+          <input name="name" type="text"/>
+          <label>Minimum Customers Per Hour:</label>
+          <input name="min" type="number"/>
+          <label>Maximum Customers Per Hour:</label>
+          <input name="max" type="number"/>
+          <label>Average Donuts Purchased:</label>
+          <input name="avg" type="number"/>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
       <div class="storageContainer">
         <table id="cookiesTable">
           <thead id="hours"></thead>

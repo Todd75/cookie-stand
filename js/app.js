@@ -37,7 +37,7 @@ let createHeader = function () {
   headerTotals.textContent = 'Totals';
   row.appendChild(headerTotals);
 }
- createHeader();
+createHeader();
 
 
 StoreData.prototype.hourlySalesValues = function() {
@@ -73,6 +73,22 @@ new StoreData('Dubai', 11, 38, 3.7);
 new StoreData('Paris', 20, 38, 2.3);
 new StoreData('Lima', 2, 16, 4.6);
 
+const locationForm = document.getElementById('addStoreData');
+
+locationForm.addEventListener('submit', 
+  function(event) {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const min = event.target.min.value;
+    const max = event.target.max.value;
+    const avg = event.target.avg.value;
+    const newLocation = new StoreData(name, min, max, avg);
+    document.getElementById('finalTotal').textContent = '';
+    createFooter();
+    locationForm.reset();
+  }
+);
+
 
 let createFooter = function() {
   let section = document.getElementById(`finalTotal`);
@@ -81,6 +97,7 @@ let createFooter = function() {
   head.textContent = 'Total';
   row.appendChild(head);
   section.appendChild(row);
+  let finalTotal = 0;
   for (let i = 0; i < hoursDaily.length; i++) {
     let salesHour = 0;
     let cell = document.createElement('td');
@@ -89,23 +106,17 @@ let createFooter = function() {
       let actualSales = actualStore.cookiesPerHourSalesArray[i];
       salesHour += actualSales;
     }
+    finalTotal = salesHour + finalTotal;
     cell.textContent = salesHour;
     row.append(cell);
   }
-  let cell = document. createElement('td');
-  let finalTotal = 0;
-  for (let i = 0; i < everyStore.length; i++) {
-    finalTotal += parseInt(everyStore[i].finalTotal);
-  }
-  cell.textContent = finalTotal;
-  row.appendChild(cell);
+  let finalCell = document.createElement('td');
+  finalCell.textContent = finalTotal;
+  row.appendChild(finalCell);
 };
 createFooter();
 
-const locationForm = document.getElementById('addStoreData');
 
-locationForm.addEventListener('submit', 
-  function()
 
 /*  Originally Question 6 
 // Seattle
