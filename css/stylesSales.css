@@ -1,0 +1,31 @@
+table, td, th {
+  border: 1px solid rgb(6, 0, 11);
+}
+table {
+  margin: 1rem;
+}
+td, th {
+  padding: 1rem;
+}
+
+thead th {
+  font-weight: bold;
+  background-color: rgba(219, 9, 19, 0.5)
+}
+
+tfoot {
+  font-weight: bold;
+  background-color:rgb(40, 60, 126, .5);
+}
+tbody {
+  background-color: rgb(200, 200, 73, .5)
+}
+header {
+  height: 70px;
+  font-size: 50px;
+  margin-left: 170px;
+}
+main h2 {
+  font-weight: bold;
+  margin-left: 16px;
+}
