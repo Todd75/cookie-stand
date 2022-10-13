@@ -102,8 +102,10 @@ let createFooter = function() {
 };
 createFooter();
 
+const locationForm = document.getElementById('addStoreData');
 
-
+locationForm.addEventListener('submit', 
+  function()
 
 /*  Originally Question 6 
 // Seattle
