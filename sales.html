@@ -16,13 +16,13 @@
         <fieldset>
           <legend>Enter New Store Data:</legend>
           <label>Location Name:</label>
-          <input name="name" type="text"/>
+          <input name="name" type="text" required/>
           <label>Minimum Customers:</label>
-          <input name="min" type="number"/>
+          <input name="min" type="number" required/>
           <label>Maximum Customers:</label>
-          <input name="max" type="number"/>
+          <input name="max" type="number" required/>
           <label>Average Donuts Hourly:</label>
-          <input name="avg" type="number"/>
+          <input name="avg" type="number" required step="0.1"/>
         </fieldset>
         <button type="submit">Submit</button>
       </form>

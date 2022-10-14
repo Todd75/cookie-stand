@@ -79,9 +79,9 @@ locationForm.addEventListener('submit',
   function(event) {
     event.preventDefault();
     const name = event.target.name.value;
-    const min = event.target.min.value;
-    const max = event.target.max.value;
-    const avg = event.target.avg.value;
+    const min = parseInt(event.target.min.value);
+    const max = parseInt(event.target.max.value);
+    const avg = parseInt(event.target.avg.value);
     const newLocation = new StoreData(name, min, max, avg);
     document.getElementById('finalTotal').textContent = '';
     createFooter();
