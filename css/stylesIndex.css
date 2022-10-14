@@ -26,6 +26,14 @@ header nav ul {
 li {
   padding: 2rem;
   font-size: 25px;
-  
-  
+}
+main article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main article p {
+  width: 500px;
+  margin: auto;
+  padding: 5px;
 }

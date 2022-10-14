@@ -1,8 +1,9 @@
 table, td, th {
-  border: 1px solid rgb(6, 0, 11);
+  border: 2px solid rgb(6, 0, 11);
 }
 table {
-  margin: 5rem;
+  margin: auto;
+  border: 2px solid rgb(6, 0, 11)
 }
 td, th {
   padding: 1rem;
@@ -25,10 +26,7 @@ h1 {
   height: 100px;
   font-size: 70px;
   margin: auto;
-}
-main h2 {
-  font-weight: bold;
-  margin-left: 16px;
+  text-align: center;
 }
 fieldset legend{
   font-weight: bold;
@@ -37,18 +35,36 @@ fieldset {
   font-weight: bold;
 }
 legend {
-  padding: 17px;
-  margin: auto;
+  font-size: 35px;
+  padding: 15px;
 }
 label {
-  padding: 5px;
+  padding: 1px;
 }
 button {
   padding: 5px;
-  text-align: center;
+  background-color: lightsalmon;
 }
-form {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+#addStoreData {
+  width: 220px;
+  margin-top: 40px;
+  margin-left: 80px;
+  
+}
+input {
+  margin-bottom: 10px;
+}
+p {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+footer p {
+  text-align: center;
+  margin-top: 15rem;
+}
+a {
+  padding: 2rem;
 }
