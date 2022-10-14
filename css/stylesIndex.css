@@ -32,8 +32,11 @@ main article {
   flex-wrap: wrap;
   align-items: center;
 }
-main article p {
-  width: 500px;
-  margin: auto;
-  padding: 5px;
+#chinook {
+  width:550px;
+  padding: 60px;
+  font-size: 20px;
+}
+main img {
+  padding: 15px;
 }
